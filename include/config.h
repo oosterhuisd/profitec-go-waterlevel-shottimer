@@ -15,7 +15,7 @@
 // DF-A02YYUW sensor has a blind distance of 3cm = 30mm
 #define LEVEL_MIN_DIST_MM 30
 // Number of times to try reading a value from the sensor
-#define LEVEL_N_RETRY 10
+#define LEVEL_N_RETRY 20
 // Delay between two consecutive read attempts
 #define LEVEL_READ_DELAY_MS 10
 // Percentage value below which the ring changes color from OK to BAD
@@ -39,7 +39,7 @@
 // How much milliseconds one increment of the counter needs
 // For a precise shot time measurement, 1000ms should be used for a full second
 // My Profitec GO seems to count a bit faster than 1000ms
-#define TIMER_INCREMENT_MS 975
+#define TIMER_INCREMENT_MS 1000
 // The timer is started when the system is awake and a vibration is detected
 // The trigger delay defines how many milliseconds the system has to vibrate
 // while being awake until the timer is activated. This prevents the timer

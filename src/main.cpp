@@ -198,10 +198,12 @@ void levelRoutine(float transitionTime) {
             greeting.hide();
         } else {
             // Sensor error - show error state
-            status.showStatus(StatusIndicatorState::ERROR, STATUS_COLOR);
+            status.showStatus(StatusIndicatorState::ERROR, RING_COLOR_BAD);
             counter.hide();
-            ring.updatePrec(100, currRingColor);
-            greeting.hide();
+            // ring.updatePrec(100, currRingColor);
+            // greeting.hide();
+            ring.hide();
+            greeting.showRandom(COUNTER_COLOR);
         }
 
         // Gradually wakeup display
