@@ -49,7 +49,6 @@
 // as the timer approaches this value
 #define TARGET_TIME_SEC 27
 
-
 // *******************************
 //         Counter settings
 // *******************************
@@ -74,7 +73,7 @@
 // Color of ring-indicator if fill level percentage <= LEVEL_BAD_PERC
 #define RING_COLOR_BAD BRRED
 // Color of ring-indicator when showing timer progress (before reaching target)
-#define RING_COLOR_TIMER MAGENTA
+#define RING_COLOR_TIMER GRAYBLUE
 // Color of ring-indicator when timer reaches 100% (target time reached)
 #define RING_COLOR_TIMER_COMPLETE GREEN
 
@@ -113,6 +112,6 @@
 // Delay between dimming steps. Dimming is performed from 100 to 0 in decrements of 1.
 #define DIM_STEP_DELAY_MS 1
 
-
+#define SPLASH_GREETING_MS 3000
 
 #endif
